@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:padding="10px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsed">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:id="@+id/imgAnime"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAnime"
+                android:layout_below="@+id/imgAnime"
+                android:text="Anime Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down"
+                android:layout_below="@+id/txtAnime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/down"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsed"
+            android:id="@+id/expanded"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/authorText"
+                android:layout_marginTop="10dp"
+                android:text="Creator :"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akira Toriyama"
+                android:id="@+id/txtAuthor"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/authorText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shounen Action"
+                android:layout_below="@+id/txtAuthor"
+                android:id="@+id/shortDesc"
+                android:layout_marginTop="7dp"/>
+
+            <ImageView
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shortDesc"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/ic_up"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/shortDesc"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:id="@+id/btnDelete"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

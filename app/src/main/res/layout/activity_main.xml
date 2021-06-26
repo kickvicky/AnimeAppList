@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/entryPage"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemon"
+        android:text="Anime List"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allAnime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="See All Anime"
+        android:textAllCaps="false"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/appName"
+        app:layout_constraintStart_toStartOf="@+id/appName"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <Button
+        android:id="@+id/watchingAnime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Watching Anime"
+        android:textAllCaps="false"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/allAnime"
+        app:layout_constraintStart_toStartOf="@+id/allAnime"
+        app:layout_constraintTop_toBottomOf="@+id/allAnime" />
+
+    <Button
+        android:id="@+id/watchedAnime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Aldready Watched"
+        android:textAllCaps="false"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/watchingAnime"
+        app:layout_constraintStart_toStartOf="@+id/watchingAnime"
+        app:layout_constraintTop_toBottomOf="@+id/watchingAnime" />
+
+    <Button
+        android:id="@+id/wishlist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Wishlist"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/watchedAnime"
+        app:layout_constraintStart_toStartOf="@+id/watchedAnime"
+        app:layout_constraintTop_toBottomOf="@+id/watchedAnime" />
+
+    <Button
+        android:id="@+id/favorites"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Favourites"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/wishlist"
+        app:layout_constraintStart_toStartOf="@+id/wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ABOUT"
+        app:backgroundTint="#F66798"
+        app:layout_constraintEnd_toEndOf="@+id/favorites"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/favorites"
+        app:layout_constraintTop_toBottomOf="@+id/favorites" />
+
+    <TextView
+        android:id="@+id/license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devoloped by Vignesh @ MIT"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

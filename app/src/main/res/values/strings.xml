@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anime List</string>
+    <string name="AllAnime">All Anime</string>
+    <string name="animeDls">Anime Details</string>
+    <string name="watched">Completed Anime</string>
+    <string name="cWatching">Currently watching</string>
+    <string name="Favorites">Favourites</string>
+    <string name="wishlist">Want To Watch</string>
+    <string name="insta">Instagram</string>
+</resources>
